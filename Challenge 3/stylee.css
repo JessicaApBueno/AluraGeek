@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root{
+    --cor-1: #F884B8;
+    --cor-2: #1d0333;
+    --cor-3: #fff0f6;
+    --cor-4:#a43ffb;
+    --cor-5:#1d0333;
+
+    
+    --font-1:"Pixelify Sans", sans-serif;
+}
+body { 
+    color: var(--cor-5);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#header {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+    height: 230px;
+    background: var(--cor-5);
+    box-shadow: 0px 7px 0.9px var(--cor-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.header__orgulhoNerd {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+main{
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    gap:15%;
+    
+}
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.tituloprodutos {
+    font-family: var(--font-1);
+    font-weight: 900;
+    font-size: 50px;
+    width: 350px;
+    text-align: center;
+    margin: 5%;
+}
+.tituloform {
+    font-family: var(--font-1);
+    font-weight: 900;
+    font-size: 50px;
+    width: 350px;
+    text-align: center;
+    margin: 5%;
+}
+
+.formulario__div {
+    margin: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    gap: 40px;
+    
+}
+
+input{
+    padding: 15px;
+    border-radius: 40px;
+}
+#nome, #valor, #imagem{
+    background-color: #F884B8;
+    color: var(--cor-5);
+    border-color: var(--cor-5);
+}
+form:focus{
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+    border-color: #F884B8;
+}
+#nome:focus{
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+    border-color: #F884B8;
+}
+#valor:focus{
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+    border-color: #F884B8;
+}
+#imagem:focus{
+    background-color: var(--cor-5);
+    color: var(--cor-1);
+}
+::placeholder{
+    color:var(--cor-5);
+    font-weight: 900;
+    font-family: "IBM Plex Mono", monospace;
+}
+input:focus::placeholder{
+    color: var(--cor-1);
+}
+
+.formulario__botoes {
+    width: 350px;
+    gap: 13px;
+
+}
+
+.btn__submit{
+    background: var(--cor-5);
+    color: var(--cor-1);
+    width: 164px;
+    border-color: #F884B8;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.btn__reset {
+    width: 164px;
+    border-radius: 15px;
+    font-size: 20px;
+    color:var(--cor-5);
+    background: var(--cor-1);
+}
+.btn__submit:hover{
+    color: var(--cor-5);
+    background-color: var(--cor-1);
+    border-color: var(--cor-5);
+}
+.btn__reset:hover{
+    color: var(--cor-1);
+    background-color: var(--cor-5);
+    border-color: var(--cor-1);
+}
+
+.produtos{
+    margin-top: -35%;
+    margin-left: 8%;
+}
+
+.secao {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+.card{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,0.5158438375350141) 29%, rgba(148,187,233,1) 100%);
+    width: 196px;
+    height: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 3px var(--cor-5);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.produtos__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-row-gap: 5em;
+  }
+
+
+.card p{
+    color: var(--cor-5);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 800;
+}
+.imgProduto{
+    width: 190px;
+    height: 140px;
+}
+.imgcontainer{
+    width: 190px;
+    height: 140px;
+    border: solid var(--cor-2);
+}
+.nome__produto {
+    text-align: left;
+    margin-top: 2px;
+    font-weight: 200;
+}
+
+.preco__produto {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto {
+    width: 176px;
+    height: 174px;
+}
+.lixeira{
+    width: 30px;
+    height: 30px;
+    margin-right: 0%;
+    margin-top: -7%;
+    
+}
+
+footer {
+    bottom: 0;
+    margin-top: 15%;
+    width: 100%;
+    height: 230px;
+    color: var(--cor-1);
+    background: var(--cor-2);
+    box-shadow: 0px -10px 9.5px var(--cor-1);
+    font-family: var(--font-1);
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    margin-top: 1%;
+    
+}
+
+a { color: inherit;
+font-size: 30px;
+gap:5px} 
+a.iconesocial{
+    color: var(--cor-1);
+    flex-direction: row;
+}
+@media (min-width: 1200px){
+
+    .main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: baseline;
+
+        padding: 30px;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    .produtos__container{
+        width: 720px;
+        margin: auto 5px;
+        box-shadow: -12px 12px 8px rgba(97, 97, 97, 0.648);
+    }
+
+    .secao {
+        display: flex;
+        gap: 10px;
+        overflow: hidden;
+    }
+    @media (max-width: 750px){
+       body{
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }    
+    
+       
+    }
